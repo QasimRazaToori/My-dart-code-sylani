@@ -1,0 +1,10 @@
+import 'dart:io'; //print the sum value from 1 till 10
+
+void main() {
+  // int n = 1;
+  int sum = 1;
+  for (var i = 0; i < 11; i++) {
+    sum = sum + i;
+  }
+  print("The sum of first ten values is equal: $sum ");
+}
