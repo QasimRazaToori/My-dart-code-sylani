@@ -1,0 +1,10 @@
+import 'dart:io'; //print table upto 10 input value from user
+
+void main() {
+  print("Enter your input table number please!");
+  int? n = int.parse(stdin.readLineSync()!);
+  for (var i = 1; i <= 10; i++) {
+    print("$n *  $i=   ${n * i}");
+    
+  }
+}
