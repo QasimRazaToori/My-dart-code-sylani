@@ -1,0 +1,16 @@
+import 'dart:io';
+
+void main() {
+  List<String> name = [];   //name is list of string data types
+  name.add('Ali');          //List of family members
+  name.add("Hassan");
+  name.add("Qasim");
+  name.add("Kauser");
+  name.add("Rubab");
+  print(name);
+  print(name.length);
+  print(name.isNotEmpty);
+  print(name.isEmpty);
+  name.insert(5, "Sammad");
+  print(name);
+}
