@@ -1,0 +1,29 @@
+import 'dart:io';                                           //import library from which we used input and output function 
+
+void main() {
+  print('Enter Your Number');
+  int number = int.parse(stdin.readLineSync()!);           //integer type number convert into int with null safety its means not empty and how much!
+  List<int> list = [];
+
+  for (var i = 0; i < number; i++) {
+    int number2 = int.parse(stdin.readLineSync()!);        //Add value from user to list 
+    list.add(number2);
+  }
+  print("list of the number is ${list}");
+  List<dynamic> list2 = [];                           // list for even value of the above list
+  List<dynamic> list3 = [];                         //list for odd value of the above list
+
+  for (int j = 0; j < list.length; j++) {
+    if (list[j] % 2 == 0) {
+      list2.add(list[j]);
+    } else {
+      list3.add(list[j]);
+      print("Odd Number in your List are : ${list[j]}");
+    }
+  }
+  print(
+      "Even Number in your List are : ${list2}"); //Value of even just in on list insted of many
+  print(
+      "Even Number in your List are : ${list3}"); //value of odd just in on list
+  print("****************");
+}
