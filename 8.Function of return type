@@ -1,0 +1,18 @@
+import 'dart:io';
+
+void main() {
+  int nu = tapfun();
+  print(nu);
+}
+
+int tapfun() {
+  int sum = 0;
+  print('Enter Your Table Value!');
+  int n = int.parse(stdin.readLineSync()!);
+  for (var i = 1; i <= 10; i++) {
+    print('The table of $n is:');
+    print('$n * $i = ${n * i}');
+    sum = sum + n * i;
+  }
+  return sum;
+}
