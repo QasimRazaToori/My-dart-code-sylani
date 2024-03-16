@@ -1,0 +1,31 @@
+void main() {
+  double num1 = 13;
+  double num2 = 5;
+  String operation = '*'; // Change the operation as needed
+
+  double result = calculator(num1, num2, operation);
+  if (result.isNaN) {
+    print("Invalid operation or division by zero.");
+  } else {
+    print("Result of $num1 $operation $num2 = $result");
+  }
+}
+
+double calculator(double num1, double num2, String operator) {
+  switch (operator) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    case '/':
+      if (num2 != 0) {
+        return num1 / num2;
+      } else {
+        return double.nan; // return NaN for division by zero
+      }
+    default:
+      return double.nan; // return NaN for invalid operator
+  }
+}
