@@ -1,0 +1,5 @@
+
+
+for (initialization; condition; increment/decrement) {
+  // Body of the loop (statements to be executed repeatedly)
+}
