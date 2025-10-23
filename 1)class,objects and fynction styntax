@@ -1,0 +1,29 @@
+class Person {
+  // Properties (variables)
+  String name;
+  int age;
+
+  // Constructor
+  Person(this.name, this.age);
+
+  // Method (function inside class)
+  void greet() {
+    print('Hello, my name is $name and I am $age years old.');
+  }
+}
+void main() {
+  // Creating an object of Person class
+  Person p1 = Person('Qasim', 22);
+
+  // Calling a method on the object
+  p1.greet();
+}
+// Function outside a class
+void sayHello(String name) {
+  print('Hello, $name!');
+}
+
+// Function with return type
+int add(int a, int b) {
+  return a + b;
+}
