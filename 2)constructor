@@ -1,0 +1,16 @@
+class Student {
+  String name;
+  int age;
+
+  // Constructor
+
+  Student(String n, int a) {
+    name = n;
+    age = a;
+  }
+}
+
+void main() {
+  var s1 = Student("Qasim", 22); // Constructor yahan chala
+  print(s1.name); // Output: Qasim
+}
