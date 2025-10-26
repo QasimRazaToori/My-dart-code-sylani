@@ -1,0 +1,4 @@
+    int age = 30; // Declares an integer variable named 'age' and assigns it the value 30.
+    String name = "Alice"; // Declares a string variable named 'name' and assigns it "Alice".
+    double price = 19.99; // Declares a double variable named 'price' and assigns it 19.99.
+    bool isActive = true; // Declares a boolean variable named 'isActive' and assigns it true.
