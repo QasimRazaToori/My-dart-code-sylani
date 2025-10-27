@@ -1,0 +1,16 @@
+class _MyProductPageState extends State<MyProductPage> {
+
+  List<String> products = ['Milk', 'Sugar', 'Salt', 'Pulse', 'Butter'];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ListView.builder(
+        itemCount: products.length,
+        itemBuilder: (context, index) => ListTile(
+          title: Text(products[index]),
+        ),
+      ),
+    );
+  }
+}
